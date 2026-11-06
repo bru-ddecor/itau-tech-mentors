@@ -1,96 +1,120 @@
-# Itaú Tech Coaches — Ecossistema de Mentoria e Especialistas em Tecnologia do Itaú
+# 🧠 Itaú Tech Coaches
 
-Este projeto é um espaço dedicado para agentes de mentoria, arquitetura, produtos, engenharia, inovação profunda (*Deep Tech*) e preparação para o ecossistema de tecnologia do Itaú Unibanco.
+> Ecossistema multiagente de mentoria técnica, arquitetural e de carreira — baseado em conteúdo público dos Itaú Tech Meetups.
 
-Ele reúne personas reais e públicas de lideranças e cientistas do banco, cobrindo desde a engenharia de software tradicional até a vanguarda de inteligência artificial agêntica, Developer Experience (DevEx) e computação quântica aplicada.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Knowledge Base](https://img.shields.io/badge/Knowledge%20Base-9%20Mentors-blue)]()
+[![Meetups](https://img.shields.io/badge/Meetups%20Processed-5-green)]()
 
 ---
 
-## Estrutura do Ecossistema de Agentes
+## ✨ O que é este projeto?
+
+O **Itaú Tech Coaches** é uma base de conhecimento estruturada para agentes de IA, construída a partir de gravações públicas dos **Itaú Tech Meetups**. Ele define personas de lideranças reais do Itaú Unibanco que atuam como mentores especializados em diferentes domínios de tecnologia, dados e carreira.
+
+Você pode usar este repositório como:
+- 📚 **Base de conhecimento** para treinar ou instruir agentes de IA
+- 🤖 **Sistema multiagente** com roteamento por especialidade
+- 🎓 **Material de estudo** para quem quer entrar e crescer em tech no Itaú
+
+---
+
+## 👥 Os 9 Mentores
+
+| # | Mentor | Especialidade |
+|---|--------|--------------|
+| 1 | 🧑‍💻 **Priscila Silveira Rocha** | Engenharia de Software · Java · AWS · Microsserviços |
+| 2 | 🎯 **Arthur de Azevedo** | Carreira · Recrutamento · Gupy · LinkedIn |
+| 3 | 🏗️ **Ricardo Coelho** | Plataforma IARA · Data Mesh · Ontologias · AI Architecture |
+| 4 | 💬 **Aline Pavan** | Iaí · Inteligência Itaú · Produtos Conversacionais · CX |
+| 5 | ⚡ **Gabriel Pegorelli** | DevEx · Devin · Plataforma DEVA · Vibe Engineering · DORA |
+| 6 | 🛡️ **Bárbara Correa** | Responsible AI · AI Red Teaming · LGPD · Guardrails |
+| 7 | 🌱 **Mariana (Mari)** | Carreira na Era da IA · Academia de IA · ICTI · Cultura |
+| 8 | ⚛️ **Dra. Samuraí Brito** | Computação Quântica · QML · VQC · IBM Quantum Network |
+| 9 | 📊 **Helen Vasconcelos** | Data Mesh · Orange Flow · Apache Iceberg · Democratização de Dados |
+
+---
+
+## 🗂️ Estrutura do Repositório
 
 ```
-itau-agents/
-├── AGENTS.md                                    # Orquestrador central do conselho de mentores
-├── README.md                                    # Documentação geral do ecossistema
+itau-tech-coaches/
+├── AGENTS.md                          # Orquestrador — roteamento por especialidade
+├── README.md                          # Este arquivo
+│
 ├── knowledge/
-│   └── meetups/
-│       ├── meetup-ia-agentica-iai-iara.md       # Meetup 1: Iaí, IARA, Governança e Carreira
-│       ├── meetup-devin-devex-inteligencia-itau.md # Meetup 2: Agentes em Escala, Devin e Inteligência Itaú
-│       ├── meetup-deva-devin-escala-itau-2026.md # Meetup 3 (2026): A Implementação da DEVA e Devin em Escala
-│       └── meetup-quantum-computing-qml-itau.md # Meetup 4: Computação Quântica e QML no Itaú/ICTI
-│       └── meetup-democratizacao-dados-investment-services.md # Meetup 5: Democratização de Dados em Investment Services
-├── priscila-rocha/                              # Engenharia de Software & Liderança
-│   ├── AGENTS.md                                # Persona da Priscila Rocha (Superintendente de Tech)
+│   └── meetups/                       # Sínteses dos Itaú Tech Meetups
+│       ├── meetup-ia-agentica-iai-iara.md
+│       ├── meetup-devin-devex-inteligencia-itau.md
+│       ├── meetup-deva-devin-escala-itau-2026.md
+│       ├── meetup-quantum-computing-qml-itau.md
+│       └── meetup-democratizacao-dados-investment-services.md
+│
+├── priscila-rocha/
+│   ├── AGENTS.md
 │   └── knowledge/
-│       ├── priscila-bio-and-mindset.md          # 31 anos de Itaú, superação e mentalidade
-│       └── itau-tech-stack.md                   # Backend Java, Spring Boot, AWS, Métricas e Resiliência
-├── arthur-azevedo/                              # Carreira & Recrutamento
-│   ├── AGENTS.md                                # Persona do Arthur de Azevedo (Marca Empregadora)
+├── arthur-azevedo/
+│   ├── AGENTS.md
 │   └── knowledge/
-│       ├── itau-recruitment-guide.md            # Gupy, LinkedIn, perfil na era dos agentes e entrevistas
-│       └── arthur-prep-methodology.md           # Método de pesquisa profunda e diferenciação
-├── ricardo-coelho/                              # Arquitetura de IA & Plataformas
-│   ├── AGENTS.md                                # Persona do Ricardo Coelho ("Ricardinho")
+├── ricardo-coelho/
+│   ├── AGENTS.md
 │   └── knowledge/
-│       └── iara-platform-and-ai-architecture.md # Plataforma IARA, Data Mesh, Ontologias e Harness
-├── aline-pavan/                                 # Produtos Conversacionais & CX
-│   ├── AGENTS.md                                # Persona da Aline Pavan (Iaí & Inteligência Itaú)
+├── aline-pavan/
+│   ├── AGENTS.md
 │   └── knowledge/
-│       └── iai-conversational-products.md       # Iaí, Pix no WhatsApp, PJ/EMPS, ELF e Métricas
-├── gabriel-pegorelli/                           # Developer Experience & Coding Agents
-│   ├── AGENTS.md                                # Persona do Gabriel Pegorelli (Líder Tech Experience)
+├── gabriel-pegorelli/
+│   ├── AGENTS.md
 │   └── knowledge/
-│       └── devex-and-devin-implementation.md    # Devin, DEVA, Vibe Engineering, DORA e Blast Radius
-├── barbara-correa/                              # Responsible AI & Governança de Risco
-│   ├── AGENTS.md                                # Persona da Bárbara Correa (Responsible AI & Privacy)
+├── barbara-correa/
+│   ├── AGENTS.md
 │   └── knowledge/
-│       └── responsible-ai-and-governance.md     # Red Teaming, Guardrails cíclicos, LGPD e Memória
-├── mariana-rh/                                  # Pessoas, Cultura & Deep Tech
-│   ├── AGENTS.md                                # Persona da Mariana ("Mari" - RH Tech & Dados)
+├── mariana-rh/
+│   ├── AGENTS.md
+│   └── knowledge/
+├── samurai-brito/
+│   ├── AGENTS.md
+│   └── knowledge/
+└── helen-vasconcelos/
+    ├── AGENTS.md
     └── knowledge/
-        └── cultura-rh-icti-academy.md           # Academia de IA, ICTI (MIT/Stanford), Programas Deva e Cultura
-└── samurai-brito/                               # Computação Quântica & Tecnologias Emergentes
-    ├── AGENTS.md                                # Persona da Dra. Samuraí Brito (Líder Quantum ICTI)
-    └── knowledge/
-        └── quantum-computing-and-qml.md         # Qubits lógicos, QML, VQC, Monte Carlo e IBM Quantum
-└── helen-vasconcelos/                           # Democratização de Dados & Investment Services
-    ├── AGENTS.md                                # Persona da Helen Vasconcelos (Gerente de Dados)
-    └── knowledge/
-        └── data-democratization-investment-services.md # Orange Flow, Iceberg, Data Mesh e Jornada Dados & IA
 ```
 
 ---
 
-## As 9 Frentes de Mentoria
+## 🚀 Como usar com agentes de IA
 
-1. **🟧 Priscila Rocha** *(Superintendente de Tecnologia)*:
-   Backend sólido em Java, Spring Boot, AWS Cloud, microsserviços, mensageria e resiliência de engenharia.
-2. **🟦 Arthur de Azevedo** *(Marca Empregadora & Recrutamento)*:
-   Otimização de perfil para Gupy e LinkedIn, o perfil de habilidades na era dos agentes (raciocínio lógico, clareza/storytelling e testes) e simulação de entrevistas.
-3. **⚙️ Ricardo Coelho ("Ricardinho")** *(Superintendente de Arquitetura de IA)*:
-   Arquitetura de agentes, plataforma IARA (modelos disponíveis em 2 dias), Data Mesh, ontologias, grafos de conhecimento e otimização de custo por token.
-4. **📱 Aline Pavan** *(Superintendente de Tecnologia do Iaí & Líder da Inteligência Itaú)*:
-   Design conversacional, produtos multimodais (Pix no WhatsApp, PJ/EMPS, ELF Investimentos com 5M+ clientes), eliminação do "banquês" e estratégia 80/20 do efeito polinizador.
-5. **💻 Gabriel Pegorelli** *(Gerente de Tecnologia & Líder da Trilha Tech Experience)*:
-   Coding agents em escala enterprise, Devin, plataforma proprietária DEVA, Vibe Engineering, teste A/B com 100 squads, métricas DORA e governança de ACUs.
-6. **🛡️ Bárbara Correa** *(Gerente de Responsible AI & Data Privacy)*:
-   Governança contínua de plataforma, AI Red Teaming, mitigação de prompt injection, equilíbrio entre segurança e eficácia, e gestão de memória conforme a LGPD.
-7. **🌱 Mariana ("Mari")** *(Líder de RH para Tech, Dados, CEX e Operações)*:
-   Carreira na era da IA, a responsabilidade que permanece 100% humana (*Human-in-the-Loop*), a Academia de IA (14k+ formados), pesquisa de fronteira no ICTI e os valores culturais do banco.
-8. **⚛️ Dra. Samuraí Brito** *(Líder de Computação Quântica e Tecnologias Emergentes no ICTI)*:
-   Computação quântica aplicada ao setor financeiro ("Research to Product"), Quantum Machine Learning (QML), algoritmos variacionais (VQC), simulação de Monte Carlo quântica, modelos *quantum-inspired* e parcerias globais (IBM Quantum Network).
-9. **🟠 Helen Vasconcelos** *(Gerente de Tecnologia — Dados, Investment Services)*:
-   Democratização de dados em escala (3.100 tabelas, 600 mil eventos/dia), Orange Flow (OR Flow — framework interno sobre Step Functions), Apache Iceberg no Data Mesh, Jornada Dados & IA com gamificação (97% dos colaboradores treinados, 41% construindo casos) e alinhamento entre times de dados e negócio.
+### Com Antigravity / Google AI Studio
+1. Clone este repositório no seu workspace
+2. O arquivo raiz `AGENTS.md` atua como orquestrador e instrui o agente a consultar o mentor certo
+3. Faça perguntas sobre Java, carreira, IA, dados, DevEx, quantum, etc.
+
+### Com qualquer LLM via RAG
+1. Indexe os arquivos `.md` em um vector store
+2. Use o `AGENTS.md` raiz como system prompt base
+3. Faça retrieval por especialidade
 
 ---
 
-## Como Interagir
+## 📋 Meetups Processados
 
-Você pode interagir solicitando a mentoria de qualquer um dos especialistas individualmente ou pedir diagnósticos combinados:
-- *"Samuraí, o Itaú já usa computação quântica em produção? O que é um VQC e como posso começar a estudar com Python e Qiskit?"*
-- *"Gabriel, qual a diferença entre Vibe Coding e Vibe Engineering no dia a dia com a DEVA e o Devin?"*
-- *"Aline e Ricardinho, como o Iaí e a IARA trabalham juntos para desambiguar intenções do cliente?"*
-- *"Priscila e Arthur, como alinhar meu projeto Java/AWS às competências que o Itaú mais valoriza nas entrevistas?"*
-- *"Bárbara e Mari, como a governança e a cultura sustentam a responsabilidade humana no uso de IA?"*
-- *"Helen, como o Orange Flow abstrai o Step Functions e por que vocês escolheram o Apache Iceberg em vez do Delta Lake para o Data Mesh?"*
-- *"Helen e Ricardinho, como a democratização de dados em Investment Services se conecta com a arquitetura de Data Mesh do Itaú?"*
+| # | Título | Speakers | Temas |
+|---|--------|----------|-------|
+| 1 | IA Agêntica, Iaí e IARA | Ricardo Coelho, Aline Pavan, Bárbara Correa, Mariana | Agentes, Plataforma IARA, Governança |
+| 2 | Devin & DevEx no Itaú | Gabriel Pegorelli, Giovana Jess, Evelyn Cristina | Coding Agents, Developer Experience |
+| 3 | DEVA em Escala (2026) | Gabriel Pegorelli | Plataforma DEVA, Vibe Engineering, 17k usuários |
+| 4 | Computação Quântica | Dra. Samuraí Brito, José Vittor | QML, VQC, IBM Quantum Network |
+| 5 | Democratização de Dados | Helen Vasconcelos, Fábio Alves, Maria Emília | Orange Flow, Iceberg, Jornada Dados & IA |
+
+---
+
+## ⚠️ Aviso Legal
+
+Este projeto é baseado em **conteúdo público** divulgado pelo Itaú Unibanco em seus canais oficiais (YouTube, meetups abertos). Não contém dados internos, sigilosos ou proprietários. As personas de líderes são construídas exclusivamente a partir de falas e apresentações públicas.
+
+Este repositório **não é oficial** do Itaú Unibanco.
+
+---
+
+## 📄 Licença
+
+MIT — sinta-se livre para usar, adaptar e contribuir.
